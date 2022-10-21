@@ -5,10 +5,11 @@
     $nisn = $_POST["nisn"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $password_md5 = md5($password);
+    $password_md5 = md5($password+$nisn);
+    $role="user";
 
-    $sql = "INSERT INTO user_table (nama_lengkap, nisn, email, password)
-    VALUES ('$nama_lengkap', '$nisn', '$email', '$password_md5')";
+    $sql = "INSERT INTO user_table (nama_lengkap, nisn, email, password, role)
+    VALUES ('$nama_lengkap', '$nisn', '$email', '$password_md5', '$role')";
 
     if ($conn->query($sql)==TRUE) {
         ?> 
@@ -23,13 +24,13 @@
         </head>
         <body>
             <script>
-                prompt("Register Berhasil")
+                alert("Register Berhasil")
             </script>
         </body>
         </html>
         
         <?php
-        header( "refresh:1; url=login.php" ); 
+        header( "refresh:0; url=login.php" ); 
     } else {
         echo "Error: " . $sql . "<br/>" . $conn->error;
     }

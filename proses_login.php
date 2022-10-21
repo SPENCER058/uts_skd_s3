@@ -10,8 +10,5 @@
     $aName1 = mysqli_fetch_assoc($data);
 
     $cek = mysqli_num_rows($data);
-
-    $uname = $aName1["nama_lengkap"];
-
-    echo "<h1> login berhasil, selamat datang " . $uname . " </h1>";
+    
 ?>

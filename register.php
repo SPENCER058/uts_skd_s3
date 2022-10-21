@@ -22,9 +22,9 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="login.html">Masuk</a></li>
-                            <li class="nav-item"><a class="nav-link" href="register.html">Daftar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.php">Masuk</a></li>
+                            <li class="nav-item"><a class="nav-link" href="register.php">Daftar</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,26 +44,26 @@
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="proses_register.php" method="post">
                                     <!-- Fullname input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="nama_lengkap" type="text" placeholder="Masukkan Nama Lengkap..." data-sb-validations="required" />
+                                        <input class="form-control" id="nama_lengkap" name="nama_lengkap" type="text" placeholder="Masukkan Nama Lengkap..." data-sb-validations="required" />
                                         <label for="nama_lengkap">Nama Lengkap</label>
                                         <div class="invalid-feedback" data-sb-feedback="nama_lengkap:required">Nama Lengkap diperlukan.</div>
                                     </div>
                                     <!-- NIK input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="nisn" type="text" placeholder="Masukkan nisn..." data-sb-validations="required" />
+                                        <input class="form-control" id="nisn" type="text" name="nisn" placeholder="Masukkan nisn..." data-sb-validations="required" />
                                         <label for="nisn">Nomor Induk Siswa Nasional</label>
                                         <div class="invalid-feedback" data-sb-feedback="nisn:required">NISN diperlukan.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="email" type="email" name="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
                                         <label for="email">Alamat Email</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">Email diperlukan.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email tidak valid.</div>
                                     </div>
                                     <!-- Password input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="password" type="password" placeholder="name@example.com" data-sb-validations="required,password" />
+                                        <input class="form-control" id="password" name="password" type="password" placeholder="name@example.com" data-sb-validations="required,password" />
                                         <label for="password">Kata Sandi</label>
                                         <div class="invalid-feedback" data-sb-feedback="password:required">Kata Sandi diperlukan.</div>
                                         <div class="invalid-feedback" data-sb-feedback="password:password">Kata Sandi tidak valid.</div>
