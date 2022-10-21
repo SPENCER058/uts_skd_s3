@@ -16,6 +16,6 @@
 
     $cek = mysqli_num_rows($data);
 
-    header("location: index.php");
+    header("location: home.php");
     
 ?>

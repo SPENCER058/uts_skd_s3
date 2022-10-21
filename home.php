@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
     <head>
@@ -35,35 +36,10 @@
                     <!-- Contact form-->
                     <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                         <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-key-fill"></i></div>
-                            <h1 class="fw-bolder">Masuk</h1>
-                            <p class="lead fw-normal text-muted mb-0">Masuk Untuk Mengakses Konten</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="proses_login.php" method="post">
-                                    <!-- Email address input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" name="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
-                                        <label for="email">Alamat Email</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">Email diperlukan.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email tidak valid.</div>
-                                    </div>
-                                    <!-- Password input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="password" type="password" name="password" placeholder="Your Password" data-sb-validations="required,password" />
-                                        <label for="password">Kata Sandi</label>
-                                        <div class="invalid-feedback" data-sb-feedback="password:required">Kata Sandi diperlukan.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="password:password">Password tidak valid.</div>
-                                    </div>
-                                    <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg " id="submitButton" type="submit">Masuk</button></div>
-                                    <div class="d-grid text-center mt-3 mb-3"><p class="lead fw-normal text-muted mb-0">Belum punya akun?</p></div>
-                                </form>
-                                <a href="register.php" style="text-decoration: none">
-                                    <div class="d-grid"><button class="btn btn-outline-primary btn-lg" id="registerButtonfromLogin">Daftar</button></div>
-                                </a>
-                            </div>
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-pen"></i></div>
+                            <h1 class="fw-bolder">ANDA TERDAFTAR SEBAGAI CALON SISWA</h1>
+                            <p class="lead fw-normal text-muted mb-0">Simpan Token Di Bawah Ini Sebagai Verifikasi Saat Ujian Nanti</p>
+                            <h1 class="lead fw-normal mt-5">ANDA TERDAFTAR SEBAGAI CALON SISWA</h1>
                         </div>
                     </div>
                 </div>
