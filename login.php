@@ -44,14 +44,14 @@
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="proses_login.php" method="post">
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="email" type="email" name="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
                                         <label for="email">Alamat Email</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">Email diperlukan.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email tidak valid.</div>
                                     </div>
                                     <!-- Password input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="password" type="password" placeholder="Your Password" data-sb-validations="required,password" />
+                                        <input class="form-control" id="password" type="password" name="password" placeholder="Your Password" data-sb-validations="required,password" />
                                         <label for="password">Kata Sandi</label>
                                         <div class="invalid-feedback" data-sb-feedback="password:required">Kata Sandi diperlukan.</div>
                                         <div class="invalid-feedback" data-sb-feedback="password:password">Password tidak valid.</div>

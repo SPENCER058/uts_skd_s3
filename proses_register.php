@@ -1,11 +1,16 @@
 <?php 
     include ("koneksi.php");
-
+    include ("caesar.php");
+    
     $nama_lengkap = $_POST["nama_lengkap"];
     $nisn = $_POST["nisn"];
     $email = $_POST["email"];
+
+    $plainEmail = $email;
+    $cipherEmail = enkripsi($plainEmail, 8);
+
     $password = $_POST["password"];
-    $password_md5 = md5($password+$nisn);
+    $password_md5 = md5($password.$cipherEmail);
     $role="user";
 
     $sql = "INSERT INTO user_table (nama_lengkap, nisn, email, password, role)
