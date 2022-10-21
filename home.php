@@ -1,3 +1,23 @@
+<?php 
+    include ("koneksi.php");
+    include ("caesar.php");
+
+    $email = $_POST['email'];
+
+    $plainEmail = $email;
+    $cipherEmail = enkripsi($plainEmail, 8);
+
+    $password = $_POST['password'];
+    $password_md5 = md5($password.$cipherEmail);
+
+    $data = mysqli_query($conn, "SELECT * FROM user_table WHERE email = '$email' AND password = '$password_md5'");
+
+    $aName1 = mysqli_fetch_assoc($data);
+
+    $cek = mysqli_num_rows($data);
+
+    $token=$password_md5
+?>
 
 <!DOCTYPE html>
 <html lang="id">
@@ -39,7 +59,7 @@
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-pen"></i></div>
                             <h1 class="fw-bolder">ANDA TERDAFTAR SEBAGAI CALON SISWA</h1>
                             <p class="lead fw-normal text-muted mb-0">Simpan Token Di Bawah Ini Sebagai Verifikasi Saat Ujian Nanti</p>
-                            <h1 class="lead fw-normal mt-5">ANDA TERDAFTAR SEBAGAI CALON SISWA</h1>
+                            <h1 class="lead fw-normal mt-5"><?php echo $token ?></h1>
                         </div>
                     </div>
                 </div>

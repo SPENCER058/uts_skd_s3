@@ -41,7 +41,7 @@
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="proses_login.php" method="post">
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="home.php" method="post">
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="email" type="email" name="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
