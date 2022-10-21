@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>Modern Business - Login</title>
+        <title>Education.id - Login</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -41,7 +41,7 @@
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="proses_login.php" method="post">
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="email" type="email" placeholder="nama@contoh.com" data-sb-validations="required,email" />
@@ -59,8 +59,10 @@
                                     <!-- Submit Button-->
                                     <div class="d-grid"><button class="btn btn-primary btn-lg " id="submitButton" type="submit">Masuk</button></div>
                                     <div class="d-grid text-center mt-3 mb-3"><p class="lead fw-normal text-muted mb-0">Belum punya akun?</p></div>
-                                    <div class="d-grid"><button class="btn btn-outline-primary btn-lg" id="registerButtonfromLogin">Daftar</button></div>
                                 </form>
+                                <a href="register.php" style="text-decoration: none">
+                                    <div class="d-grid"><button class="btn btn-outline-primary btn-lg" id="registerButtonfromLogin">Daftar</button></div>
+                                </a>
                             </div>
                         </div>
                     </div>
